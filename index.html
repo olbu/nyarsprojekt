@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--Startar funktionen startTimer när sidan laddas in-->
+	<body onload="startTimer()">
+	<title>Happy new year</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!--Css koden -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="javascript.js"></script> <!--Javascript koden -->
+	<script src="fireworks.js"></script> <!--fyrverkerierna jag lånade "https://www.jqueryscript.net/animation/Realistic-Fireworks-Animations-Using-jQuery-And-Canvas-fireworks-js.html"
+	-->
+</head>
+<body>
+	<div class="fireworks">
+	</div>
+	<div id="wrapper">
+	    <div id="msg">New Year's Eve Countdown</div>
+	    <div class="siffror">
+	        <div class="siffrorTyp">Days</div>
+	        <div class="Siffra" id="days">
+	        	<span>0</span><span>0</span><span>0</span>
+	        </div>
+	    </div>
+	    <div class="siffror sep"> : </div>
+	    <div class="siffror">
+	        <div class="siffrorTyp">Hours</div>
+	        <div class="Siffra" id="hours">
+	        	<span>0</span><span>0</span><span>0</span>
+	        </div>
+	    </div>
+	    <div class="siffror sep"> : </div>
+
+	    <div class="siffror">
+	        <div class="siffrorTyp">Minutes</div>
+	        <div class="Siffra" id="mins">
+	        	<span>0</span><span>0</span><span>0</span>
+	        </div>
+	    </div>
+	    <div class="siffror sep"> : </div>
+	    <div class="siffror">
+	        <div class="siffrorTyp">Seconds</div>
+	        <div class="Siffra" id="secs">
+	        	<span>0</span><span>0</span><span>0</span>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+html {overflow-x: hidden;overflow-y: hidden; }
+body {
+	text-align: center;
+	font-family: sans-serif;
+    font-weight: 100;
+    background: white;
+    margin-top: 40vh;
+    margin-left: -1vw;
+    background-color: black;
+    animation: flying 1s;
+    }
+<style type="text/css">
+#wrapper{
+	color:gray;
+	font-size:30px;
+	line-height:normal;
+	text-align:center;
+	padding:5px;
+	background:rgba(255, 255, 255, 0.1);
+	}
+.siffror{ 
+	display:inline-block;
+	vertical-align:bottom;
+	margin-top: 1vh;
+	color: white;
+	}
+.siffrorTyp{
+	font-size:13px;
+	}
+.Siffra > span{
+	background: white none repeat scroll 0 0;
+	border:1px solid rgba(0,0,0,0.1);
+	border-radius:5px;
+	box-shadow:1px 1px 1px #d1c1c1;
+	display:inline-block;padding:2px 7px;
+	margin:0 1px;
+	color:black;
+	}
+
+	/*:*/
+.sep{
+	padding:5px 0;
+	animation:blinks 1s linear infinite;
+	-moz-animation:blinks 1s linear infinite;
+	-webkit-animation:blinks 1s linear infinite;
+	}
+#msg{
+	color: white;
+	font-size: 2em;
+	}
+
+/*Animationer*/
+@keyframes blinks {
+	0%{opacity:1}
+	50%{opacity:0}
+	100%{opacity:1}
+	}
+@-moz-keyframes blinks {
+	0%{opacity:1}
+	50%{opacity:0}
+	100%{opacity:1}
+	}
+@-webkit-keyframes blinks {
+	0%{opacity:1}
+	50%{opacity:0}
+	100%{opacity:1}
+	}
+@keyframes flying{
+	from{transform: translateY(-2000px)}
+	to{transform: translateY(0)}
+}
